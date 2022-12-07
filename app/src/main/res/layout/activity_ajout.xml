@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".Ajout">
+
+    <TextView
+        android:id="@+id/textView"
+        style="@style/st_titre1"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="New Contact"
+        android:textColor="#863A6F" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text= "Last Name"
+        android:textColor="#D989B5"
+        android:textSize="20sp"
+        android:textStyle="bold"  />
+
+    <EditText
+        android:id="@+id/ednom_ajt"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/shape"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:textColor="#000000"  />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="First Name"
+        android:textColor="#D989B5"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edprenom_ajt"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/shape"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:textColor="#000000"  />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="Email"
+        android:textColor="#D989B5"
+        android:textSize="20sp"
+        android:textStyle="bold"  />
+
+    <EditText
+        android:id="@+id/edemail_ajt"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/shape"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:textColor="#000000"
+        />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="Phone"
+        android:textColor="#D989B5"
+        android:textSize="20sp"
+        android:textStyle="bold"  />
+
+    <EditText
+        android:id="@+id/ednum_ajt"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/shape"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:textColor="#000000"  />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:paddingTop="30dp">
+
+        <Button
+            android:id="@+id/btnajt_ajt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#975C8D"
+            android:text="Add"
+            android:textColor="#FFFFFF"  />
+
+    </LinearLayout>
+
+</LinearLayout>

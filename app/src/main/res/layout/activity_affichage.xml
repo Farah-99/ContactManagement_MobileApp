@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".Affichage">
+
+    <TextView
+        android:id="@+id/tv_aff_aff"
+        style="@style/st_titre1"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="Contact List"
+        android:textColor="#863A6F" />
+
+    <ListView
+        android:id="@+id/lv_aff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
