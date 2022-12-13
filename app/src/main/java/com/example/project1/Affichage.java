@@ -1,8 +1,11 @@
 package com.example.project1;
 
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ListView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -14,8 +17,10 @@ import java.util.ArrayList;
 public class Affichage extends AppCompatActivity {
 
     private ListView lv_aff;
-    Button btn_supp;
     ArrayList<Contact> data = new ArrayList<Contact>();
+    ArrayList<Contact> search_data_orig = new ArrayList<>();
+    private EditText searchBar ;
+    MonAdapterContact ad;
 
 
     @Override
@@ -24,7 +29,9 @@ public class Affichage extends AppCompatActivity {
         setContentView(R.layout.activity_affichage);
 
         lv_aff = findViewById(R.id.lv_aff);
-        Button btn_supp = findViewById(R.id.btnsup_aff);
+        searchBar = findViewById(R.id.recher_edit);
+
+
         // without sql light
          /*data.add(new Produit(1, "pc",  "efg", 12.5, 100));
         data.add(new Produit(2, "clavier",  "bla", 15.5, 150));
@@ -43,15 +50,51 @@ public class Affichage extends AppCompatActivity {
 
 
         data = manager.getAllContact();
+        search_data_orig = manager.getAllContact();
 
-        MonAdapterContact ad = new MonAdapterContact(Affichage.this,  data) ;
+        ad = new MonAdapterContact(Affichage.this,  data) ;
         lv_aff.setAdapter(ad);
-        /*btn_supp.setOnClickListener(new View.OnClickListener() {
+
+        searchBar.addTextChangedListener(new TextWatcher() {
             @Override
-            public void onClick(View view) {
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
 
             }
-        });*/
+
+            @Override
+            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+                data = filter_arrayList_Contact(charSequence.toString());
+                ad = new MonAdapterContact(getApplicationContext(),data);
+                lv_aff.setAdapter(ad);
+            }
+
+            @Override
+            public void afterTextChanged(Editable editable) {
+
+            }
+        });
+
+
 
     }
+
+    private ArrayList<Contact> filter_arrayList_Contact (String textFilter)
+    {
+        ArrayList<Contact> search_data_temp= new ArrayList<>();
+        if (textFilter != null)
+        {
+            for (int i =0; i< search_data_orig.size(); i++)
+            {
+                // verifier que l elemnet qu on est en train de boucler contient notre textFilter
+                if (search_data_orig.get(i).getNom().toUpperCase().contains(textFilter.toUpperCase())){
+                    search_data_temp.add(search_data_orig.get(i));
+                }
+            }
+        }else {
+            search_data_temp = search_data_orig;
+        }
+        return search_data_temp;
+    }
+
+
 }

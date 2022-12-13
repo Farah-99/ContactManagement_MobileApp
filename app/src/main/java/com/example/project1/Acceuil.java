@@ -24,7 +24,6 @@ public class Acceuil extends AppCompatActivity {
         tvusername = findViewById(R.id.tv_user_acc);
         btnajout = findViewById(R.id.btn_aj_acc);
         btnaffi = findViewById(R.id.btn_aff_acc);
-        btnedit = findViewById(R.id.btn_ed_acc);
 
         btnaffi.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -42,13 +41,7 @@ public class Acceuil extends AppCompatActivity {
             }
         });
 
-        btnedit.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(Acceuil.this, Edition.class);
-                startActivity(i);
-            }
-        });
+
 
     }
 }

@@ -56,12 +56,12 @@ public class ContactManager {
             contacts.add(new Contact(i1,i2,i3,i4,i5));
             cr.moveToNext();
         }
-        db.close();
+
         return contacts;
     }
 
     public void supprimerItem(String i){
-        db.delete(ContactHelper.table_contact, "id=?",new String[]{i});
+        db.delete(ContactHelper.table_contact, "col_email=?",new String[]{i});
         db.close();
     }
 

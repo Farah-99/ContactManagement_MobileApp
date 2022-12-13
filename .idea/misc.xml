@@ -4,12 +4,14 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/msi/AndroidStudioProjects/Project1/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2703125" />
+        <entry key="..\:/Users/msi/AndroidStudioProjects/Project1/app/src/main/res/drawable-v24/shape.xml" value="0.22916666666666666" />
+        <entry key="..\:/Users/msi/AndroidStudioProjects/Project1/app/src/main/res/drawable-v24/shape2.xml" value="0.22916666666666666" />
         <entry key="..\:/Users/msi/AndroidStudioProjects/Project1/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2703125" />
         <entry key="..\:/Users/msi/AndroidStudioProjects/Project1/app/src/main/res/layout/activity_acceuil.xml" value="0.2" />
-        <entry key="..\:/Users/msi/AndroidStudioProjects/Project1/app/src/main/res/layout/activity_affichage.xml" value="0.24048913043478262" />
+        <entry key="..\:/Users/msi/AndroidStudioProjects/Project1/app/src/main/res/layout/activity_affichage.xml" value="0.4" />
         <entry key="..\:/Users/msi/AndroidStudioProjects/Project1/app/src/main/res/layout/activity_ajout.xml" value="0.264" />
-        <entry key="..\:/Users/msi/AndroidStudioProjects/Project1/app/src/main/res/layout/activity_edition.xml" value="0.264" />
-        <entry key="..\:/Users/msi/AndroidStudioProjects/Project1/app/src/main/res/layout/activity_main.xml" value="0.4" />
+        <entry key="..\:/Users/msi/AndroidStudioProjects/Project1/app/src/main/res/layout/activity_edition.xml" value="0.1" />
+        <entry key="..\:/Users/msi/AndroidStudioProjects/Project1/app/src/main/res/layout/activity_main.xml" value="0.176" />
         <entry key="..\:/Users/msi/AndroidStudioProjects/Project1/app/src/main/res/layout/element.xml" value="0.4" />
         <entry key="..\:/Users/msi/AndroidStudioProjects/Project1/app/src/main/res/layout/shape.xml" value="0.25416666666666665" />
       </map>

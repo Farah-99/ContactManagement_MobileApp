@@ -30,6 +30,7 @@ public class Ajout extends AppCompatActivity {
         btnajout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 String nom = ednom.getText().toString();
                 String prenom = edprenom.getText().toString();
                 String email = edemail.getText().toString();

@@ -37,14 +37,7 @@
         android:text="Add"
         android:textColor="#FFFFFF" />
 
-    <Button
-        android:id="@+id/btn_ed_acc"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="5dp"
-        android:backgroundTint="#975C8D"
-        android:text="Edit"
-        android:textColor="#FFFFFF" />
+
 
     <Button
         android:id="@+id/btn_aff_acc"

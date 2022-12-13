@@ -2,11 +2,11 @@ package com.example.project1;
 
 public class Contact {
 
-    private int id;
-    private String nom;
-    private String prenom;
-    private String email;
-    private String numero;
+    public int id;
+    public String nom;
+    public String prenom;
+    public String email;
+    public String numero;
 
     public Contact() {
     }
